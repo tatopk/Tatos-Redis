@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  tatos-redis:
+    build: .
+    image: my-tatos-redis-app
+    container_name: tatos-redis
+    restart: always
+    volumes:
+      - ./tatos-redis.py:/app/tatos-redis.py
